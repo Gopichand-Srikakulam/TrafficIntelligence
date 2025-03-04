@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traffic Volume Estimation</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='ferrari2.jpg') }}");
+            background-size: cover;
+            text-align: center;
+            color: black;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        .heading {
+            font-size: 50px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+        .result {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">Traffic Volume Estimation</div>
+    
+    <div class="result">
+        <p>{{ prediction_text }}</p>
+    </div>
+</body>
+</html>
